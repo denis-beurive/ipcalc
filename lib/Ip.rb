@@ -57,7 +57,11 @@ class Ip
       @version = Ip.version(in_ip)
       @ip_string = in_ip
     elsif in_ip.is_a?(Integer)
-      @version = in_v
+      if in_ip > Ip::IPMAX_V4
+        @version = 6
+      else
+        @version = in_v
+      end
       @ip_string = Iptools.i_to_dots(in_ip, @version)
     else
       raise RuntimeError, "Invalid IP addresse #{in_ip} (should be a string or an interger)"
@@ -449,10 +453,10 @@ end
 
 if __FILE__ == $0
   
-  myip = "1.2.3.253";  
+  myip = "192.168.12.10";  
   ip = Ip.new(myip)
   
-  myipv6 = "1.2.3.4.5.6"
+  myipv6 = "192.168.120.100.12.10";  
   ipv6 = Ip.new(myipv6)
 
   # Testing basic conversion.
@@ -582,7 +586,10 @@ if __FILE__ == $0
 
   # Testing bitwise operators
 
-  puts "Testing >> on IPV#{ip.version}"
+  ip   = Ip.new('192.168.12.10') 
+  ipv6 = Ip.new('192.168.120.100.12.10')
+  
+  puts "Testing >> on IPV#{ip.version} on #{ip}"
   puts "#{ip.to_bin}"
   puts "#{(ip >> 1).to_bin}"
   puts "#{(ip >> 2).to_bin}"
@@ -595,7 +602,7 @@ if __FILE__ == $0
   puts
 
   puts "Testing <<"
-  puts "#{ip.to_bin} on IPV#{ip.version}"
+  puts "#{ip.to_bin} on IPV#{ip.version} in #{ip}"
   puts "#{(ip << 1).to_bin}"
   puts "#{(ip << 2).to_bin}"
   puts
