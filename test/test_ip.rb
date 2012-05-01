@@ -1,4 +1,5 @@
-$:.push("..")
+# $:.push("..")
+# Or ruby -I..
 require 'test/unit'
 require 'Ip'
 
@@ -138,11 +139,7 @@ class IpTest < Test::Unit::TestCase
       assert_equal('0.0.170.187.204.221',   Ip.new(0xAABBCCDD, 6).to_s)
       assert_equal('0.0.173.85.245.65',     Ip.new(0b10101101010101011111010101000001, 6).to_s)
       assert_equal('192.168.120.100.12.10', Ip.new(211829806861322).to_s)
-      
-      
     end
-    
-
 end
 
 
