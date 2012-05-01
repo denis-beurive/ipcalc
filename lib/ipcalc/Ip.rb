@@ -4,22 +4,7 @@
 # License::   Distributes under the same terms as Ruby
 
 
-# Test the Ruby's version... This should be rewritten.
-v  = RUBY_VERSION.split('.')[0,3]
-d  = 100
-vv = 0
-v.each do |i|
-	vv += d * i.to_i
-	d = d/10
-end
-if (vv < 191)
-	raise RuntimeError, "This class requires RUBY version 1.9.1 or greater."
-end
-
-
-
-
-require "Iptools"
+require_relative "Iptools"
 
 # This class handles common operations on IP addresses.
 #   o Create an IP address from a given string (ex: "192.168.0.12").
