@@ -1,3 +1,26 @@
+==General description==
+
+This gem contains classes that make IP manipulation easier.
+
+* Works with IPV4 and IPV6.
+* Arithmetic operations (+, -, +=, -=). For example, if IP="1.2.3.4", then IP+1="1.2.3.5".
+* Bitwise operations between IPs (|, &, ^).
+* Left and righ shifts (<<, >>).
+* Print IP in various formats:
+** The standard dotted notation. For example: 192.168.12.10
+** Decimal value. For example: 3232238602
+** Binary. For example: 11000000101010000000110000001010
+** Hexadecimal. For example: c0a80c0a
+** Pretty binary. For example: 11000000.10101000.00001100.00001010
+** Pretty hexadecimal. For example: c0.a8.0c.0a
+* Subnet discovery.  What is the "/23" subnet that contains this IP?
+* Subnet testing.  Is this IP included in this subnet?
+* IP comparaison (>, <, >=, <=, ==, !=, <=>). For example: "1.2.3.4" > "1.2.3.5" : FALSE
+* Manipulate IP like array. For examples, if IP="10.20.30.40":
+** IP[1] is 20.
+** IP[1] = 55, then IP="10.55.30.40"
+* Create IPs from integers of strings.
+
 ==Requirement==
 
 Ruby 1.9 or greater.
