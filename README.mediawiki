@@ -23,7 +23,7 @@ This gem contains classes that make IP manipulation easier.
 
 ==Requirement==
 
-Ruby 1.9 or greater.
+Ruby 1.9.1 or greater.
 
 ==Author==
 
