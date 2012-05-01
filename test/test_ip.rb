@@ -1,7 +1,7 @@
-# $:.push("..")
-# Or ruby -I..
+# $:.push("../lib")
+# Or ruby -I../lib
 require 'test/unit'
-require 'Ip'
+require 'ipcalc'
 
 
 class IpTest < Test::Unit::TestCase
