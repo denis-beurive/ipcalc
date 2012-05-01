@@ -19,7 +19,7 @@ end
 
 
 
-require "./Iptools"
+require "Iptools"
 
 # This class handles common operations on IP addresses.
 #   o Create an IP address from a given string (ex: "192.168.0.12").
