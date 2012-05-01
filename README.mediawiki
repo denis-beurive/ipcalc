@@ -1,0 +1,15 @@
+==Requirement==
+
+Ruby 1.9 or greater.
+
+==Author==
+
+Denis BEURIVE
+
+==Licence==
+
+GPL
+
+
+
+
