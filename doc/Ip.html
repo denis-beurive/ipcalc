@@ -1,0 +1,1494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: Ip</title>
+
+  <link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+  <script src="./js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="./lib/ipcalc/Ip_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/ipcalc/Ip.rb">lib/ipcalc/Ip.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Object</p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-c-to_bin">::to_bin</a></li>
+          
+          <li><a href="#method-c-to_hex">::to_hex</a></li>
+          
+          <li><a href="#method-c-to_i">::to_i</a></li>
+          
+          <li><a href="#method-c-valid-3F">::valid?</a></li>
+          
+          <li><a href="#method-c-validV4-3F">::validV4?</a></li>
+          
+          <li><a href="#method-c-validV6-3F">::validV6?</a></li>
+          
+          <li><a href="#method-c-version">::version</a></li>
+          
+          <li><a href="#method-i-21-3D">#!=</a></li>
+          
+          <li><a href="#method-i-26">#&</a></li>
+          
+          <li><a href="#method-i-2B">#+</a></li>
+          
+          <li><a href="#method-i-2D">#-</a></li>
+          
+          <li><a href="#method-i-3C">#<</a></li>
+          
+          <li><a href="#method-i-3C-3C">#<<</a></li>
+          
+          <li><a href="#method-i-3C-3D">#<=</a></li>
+          
+          <li><a href="#method-i-3C-3D-3E">#<=></a></li>
+          
+          <li><a href="#method-i-3D-3D">#==</a></li>
+          
+          <li><a href="#method-i-3E">#></a></li>
+          
+          <li><a href="#method-i-3E-3D">#>=</a></li>
+          
+          <li><a href="#method-i-3E-3E">#>></a></li>
+          
+          <li><a href="#method-i-5B-5D">#[]</a></li>
+          
+          <li><a href="#method-i-5B-5D-3D">#[]=</a></li>
+          
+          <li><a href="#method-i-5E">#^</a></li>
+          
+          <li><a href="#method-i-cidr">#cidr</a></li>
+          
+          <li><a href="#method-i-included_in-3F">#included_in?</a></li>
+          
+          <li><a href="#method-i-to_bin">#to_bin</a></li>
+          
+          <li><a href="#method-i-to_hex">#to_hex</a></li>
+          
+          <li><a href="#method-i-to_i">#to_i</a></li>
+          
+          <li><a href="#method-i-to_s">#to_s</a></li>
+          
+          <li><a href="#method-i-7C">#|</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./Ip.html">Ip</a></li>
+        
+          <li><a href="./Iptools.html">Iptools</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Ip</h1>
+
+    <div id="description" class="description">
+      
+<p>This class handles common operations on IP addresses.</p>
+
+<pre>o Create an IP address from a given string (ex: &quot;192.168.0.12&quot;).
+o Create an IP address from a given integer value (ex: 16909060 or 0b00000001000000100000001100000100 or 0xaabbccdd)
+o Get the string representation of the IP address.
+o Get the decimal representation of the IP address.
+o Get the binary representation of the IP address.
+o Get the hexa representation of the IP address.
+o Increment an IP address (ex: 198.168.0.12 + 3).
+o Decrement an IP address (ex: 198.168.0.12 - 5).
+o Compare 2 IP addresses (ex: 198.168.0.12 &gt; 198.168.0.13).
+o Manipulate an IP address by &quot;dots&quot; (ex: if ip=&quot;198.168.0.12&quot;, then ip[0]=192 produces ip=&quot;192.168.0.12&quot; of ip[3] returns 12).
+o Operate binary operations &lt;&lt;, &gt;&gt;, |, &amp;, ^ (ex: &quot;198.168.0.12&quot; &amp; &quot;200.168.0.15&quot;).
+o Calculate the subnet of a given class that contains the IP address (ex: What is the subnet of class 24 that includes this IP address?).
+o Test if the IP address is included in a given subnet (ex: is &quot;192.168.10.12&quot; included into &quot;123.154.12.13/24&quot;?).</pre>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+      <!-- Constants -->
+      <div id="constants-list" class="section">
+        <h3 class="section-header">Constants</h3>
+        <dl>
+        
+          <dt><a name="IPMAX_V4">IPMAX_V4</a></dt>
+          
+          <dd class="description"><p>Maximum value for an IP V4 address.</p></dd>
+          
+        
+          <dt><a name="IPMAX_V6">IPMAX_V6</a></dt>
+          
+          <dd class="description"><p>Maximum value for an IP V6 address.</p></dd>
+          
+        
+        </dl>
+      </div>
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="dots-attribute-method" class="method-detail">
+          <a name="dots"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">dots</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="version-attribute-method" class="method-detail">
+          <a name="version"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">version</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(in_ip, in_v=4)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Create an IP address V4 or V6.</p>
+<dl class="rdoc-list"><dt>in_ip</dt>
+<dd>
+<p>String, or integer, that represents the IP address. Example:
+0b10101101010101011111010101000001 or 2908091713 or “173.85.245.65”</p>
+</dd><dt>in_v</dt>
+<dd>
+<p>IP version (4 or 6).</p>
+</dd></dl>
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 39</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">in_ip</span>, <span class="ruby-identifier">in_v</span>=<span class="ruby-value">4</span>)
+  
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>)
+    <span class="ruby-ivar">@version</span> = <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">version</span>(<span class="ruby-identifier">in_ip</span>)
+    <span class="ruby-ivar">@ip_string</span> = <span class="ruby-identifier">in_ip</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Integer</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">in_ip</span> <span class="ruby-operator">&gt;</span> <span class="ruby-constant">Ip</span><span class="ruby-operator">::</span><span class="ruby-constant">IPMAX_V4</span>
+      <span class="ruby-ivar">@version</span> = <span class="ruby-value">6</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-ivar">@version</span> = <span class="ruby-identifier">in_v</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-ivar">@ip_string</span> = <span class="ruby-constant">Iptools</span>.<span class="ruby-identifier">i_to_dots</span>(<span class="ruby-identifier">in_ip</span>, <span class="ruby-ivar">@version</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;Invalid IP addresse #{in_ip} (should be a string or an interger)&quot;</span>
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-ivar">@dots</span> = <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">valid?</span>(<span class="ruby-ivar">@ip_string</span>, <span class="ruby-ivar">@version</span>)
+     
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;Invalid IP addresse #{in_ip}&quot;</span> <span class="ruby-keyword">if</span> (<span class="ruby-ivar">@dots</span>.<span class="ruby-identifier">nil?</span>)
+  <span class="ruby-ivar">@ip_int</span> = <span class="ruby-identifier">to_i</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+        <div id="to_bin-method" class="method-detail ">
+          <a name="method-c-to_bin"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_bin</span><span
+              class="method-args">(in_ip, in_pretty=false)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Convert a string that represents an IP address into a string that
+represents a binary value. The returned string may contain bytes’
+separators (dots). Example: “1.2.3.4” =&gt;
+“00000001000000100000001100000100” or “00000001.00000010.00000011.00000100”</p>
+<dl class="rdoc-list"><dt>in_ip</dt>
+<dd>
+<p>String to convert.</p>
+</dd><dt>in_pretty</dt>
+<dd>
+<p>If TRUE, then the returned string will contain dots to separated bytes.</p>
+</dd></dl>
+
+<p>The method returns a string that represents a binary value.</p>
+            
+
+            
+            <div class="method-source-code" id="to_bin-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 354</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">to_bin</span>(<span class="ruby-identifier">in_ip</span>, <span class="ruby-identifier">in_pretty</span>=<span class="ruby-keyword">false</span>)
+  <span class="ruby-identifier">version</span> = <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">version</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">s</span> = <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">to_i</span>(<span class="ruby-identifier">in_ip</span>).<span class="ruby-identifier">to_s</span>(<span class="ruby-value">2</span>).<span class="ruby-identifier">rjust</span>(<span class="ruby-constant">Ip</span>.<span class="ruby-constant">MAX_CLASS</span>(<span class="ruby-identifier">version</span>), <span class="ruby-string">'0'</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">s</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">in_pretty</span>
+  
+  <span class="ruby-keyword">if</span> (<span class="ruby-value">4</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">version</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-regexp">/^((?:0|1){8})((?:0|1){8})((?:0|1){8})((?:0|1){8})$/</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">s</span>)[<span class="ruby-value">1</span>,<span class="ruby-value">4</span>].<span class="ruby-identifier">join</span>(<span class="ruby-string">'.'</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-regexp">/^((?:0|1){8})((?:0|1){8})((?:0|1){8})((?:0|1){8})((?:0|1){8})((?:0|1){8})$/</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">s</span>)[<span class="ruby-value">1</span>,<span class="ruby-value">6</span>].<span class="ruby-identifier">join</span>(<span class="ruby-string">'.'</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_bin-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_bin-method -->
+
+      
+        <div id="to_hex-method" class="method-detail ">
+          <a name="method-c-to_hex"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_hex</span><span
+              class="method-args">(in_ip, in_pretty=false)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Convert a string that represents an IP address into a string that
+represents a hexa value. The returned string may contain bytes’ separators
+(dots). Example: “1.2.3.4” =&gt; “01020304” or “01.02.03.04”</p>
+<dl class="rdoc-list"><dt>in_ip</dt>
+<dd>
+<p>String to convert.</p>
+</dd><dt>in_pretty</dt>
+<dd>
+<p>If TRUE, then the returned string will contain dots to separate bytes.</p>
+</dd></dl>
+
+<p>The method returns a string that represents a hexa value.</p>
+            
+
+            
+            <div class="method-source-code" id="to_hex-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 374</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">to_hex</span>(<span class="ruby-identifier">in_ip</span>, <span class="ruby-identifier">in_pretty</span>=<span class="ruby-keyword">false</span>)
+  <span class="ruby-identifier">version</span> = <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">version</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">s</span> = <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">to_i</span>(<span class="ruby-identifier">in_ip</span>).<span class="ruby-identifier">to_s</span>(<span class="ruby-value">16</span>).<span class="ruby-identifier">rjust</span>(<span class="ruby-identifier">version</span> <span class="ruby-operator">==</span> <span class="ruby-value">4</span> <span class="ruby-operator">?</span> <span class="ruby-value">8</span> <span class="ruby-operator">:</span> <span class="ruby-value">12</span>, <span class="ruby-string">'0'</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">s</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">in_pretty</span>
+  <span class="ruby-keyword">if</span> (<span class="ruby-value">4</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">version</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-regexp">/^([[:xdigit:]]{2})([[:xdigit:]]{2})([[:xdigit:]]{2})([[:xdigit:]]{2})$/</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">s</span>)[<span class="ruby-value">1</span>,<span class="ruby-value">4</span>].<span class="ruby-identifier">join</span>(<span class="ruby-string">'.'</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-regexp">/^([[:xdigit:]]{2})([[:xdigit:]]{2})([[:xdigit:]]{2})([[:xdigit:]]{2})([[:xdigit:]]{2})([[:xdigit:]]{2})$/</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">s</span>)[<span class="ruby-value">1</span>,<span class="ruby-value">6</span>].<span class="ruby-identifier">join</span>(<span class="ruby-string">'.'</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_hex-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_hex-method -->
+
+      
+        <div id="to_i-method" class="method-detail ">
+          <a name="method-c-to_i"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_i</span><span
+              class="method-args">(in_ip)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Convert a string that represents an IP address into an integer. Example:
+“1.2.3.4” =&gt; 16909060</p>
+<dl class="rdoc-list"><dt>in_ip</dt>
+<dd>
+<p>String to convert.</p>
+</dd></dl>
+
+<p>The method returns an integer that represents the given IP address.</p>
+            
+
+            
+            <div class="method-source-code" id="to_i-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 339</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">to_i</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">dots</span> = <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">valid?</span>(<span class="ruby-identifier">in_ip</span>, <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">version</span>(<span class="ruby-identifier">in_ip</span>));
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;Invalid IP addresse #{in_ip}&quot;</span> <span class="ruby-keyword">if</span> (<span class="ruby-identifier">dots</span>.<span class="ruby-identifier">nil?</span>)
+  <span class="ruby-constant">Iptools</span>.<span class="ruby-identifier">dots_to_i</span>(<span class="ruby-identifier">dots</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_i-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_i-method -->
+
+      
+        <div id="valid-3F-method" class="method-detail ">
+          <a name="method-c-valid-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">valid?</span><span
+              class="method-args">(in_ip, in_version=4)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Test if a given string represents an IP address.</p>
+<dl class="rdoc-list"><dt>in_ip</dt>
+<dd>
+<p>String to test.</p>
+</dd><dt>in_version</dt>
+<dd>
+<p>IP version (should be 4 or 6)</p>
+</dd></dl>
+
+<p>If the given string represents an IP address, that the method returns an
+array that represents the IP address. Otherwise, the method returns the
+value nil.</p>
+            
+
+            
+            <div class="method-source-code" id="valid-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 282</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">valid?</span>(<span class="ruby-identifier">in_ip</span>, <span class="ruby-identifier">in_version</span>=<span class="ruby-value">4</span>)
+  <span class="ruby-keyword">if</span> (<span class="ruby-identifier">in_version</span> <span class="ruby-operator">==</span> <span class="ruby-value">4</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">validV4?</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> (<span class="ruby-identifier">in_version</span> <span class="ruby-operator">==</span> <span class="ruby-value">6</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">validV6?</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;Invalid IP addresse version #{in_version}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- valid-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- valid-3F-method -->
+
+      
+        <div id="validV4-3F-method" class="method-detail ">
+          <a name="method-c-validV4-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">validV4?</span><span
+              class="method-args">(in_ip)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Test if a given string represents an IP V4 address.</p>
+<dl class="rdoc-list"><dt>in_ip</dt>
+<dd>
+<p>String to test.</p>
+</dd></dl>
+
+<p>If the given string represents an IP V4 address, that the method returns an
+array that represents the IP address. Otherwise, the method returns the
+value nil.</p>
+            
+
+            
+            <div class="method-source-code" id="validV4-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 299</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">validV4?</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">dots</span> = [];
+  <span class="ruby-identifier">m</span> = <span class="ruby-regexp">/^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">m</span>.<span class="ruby-identifier">nil?</span>
+  
+  <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">4</span>
+    <span class="ruby-identifier">dot</span> = <span class="ruby-identifier">m</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">to_i</span>;
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">dot</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">255</span>
+    <span class="ruby-identifier">dots</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">dot</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">dots</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- validV4-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- validV4-3F-method -->
+
+      
+        <div id="validV6-3F-method" class="method-detail ">
+          <a name="method-c-validV6-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">validV6?</span><span
+              class="method-args">(in_ip)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Test if a given string represents an IP V6 address.</p>
+<dl class="rdoc-list"><dt>in_ip</dt>
+<dd>
+<p>String to test.</p>
+</dd></dl>
+
+<p>If the given string represents an IP V6 address, that the method returns an
+array that represents the IP address. Otherwise, the method returns the
+value nil.</p>
+            
+
+            
+            <div class="method-source-code" id="validV6-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 319</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">validV6?</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">dots</span> = [];
+  <span class="ruby-identifier">m</span> = <span class="ruby-regexp">/^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">m</span>.<span class="ruby-identifier">nil?</span>
+  
+  <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">6</span>
+    <span class="ruby-identifier">dot</span> = <span class="ruby-identifier">m</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">to_i</span>;
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">dot</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">255</span>
+    <span class="ruby-identifier">dots</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">dot</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">dots</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- validV6-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- validV6-3F-method -->
+
+      
+        <div id="version-method" class="method-detail ">
+          <a name="method-c-version"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">version</span><span
+              class="method-args">(in_ip)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Given a string that represents an IP address, return the IP version (4 or
+6).</p>
+<dl class="rdoc-list"><dt>in_ip</dt>
+<dd>
+<p>String that represents an IP address.</p>
+</dd></dl>
+
+<p>The method returns the IP version of the IP address. The returned value is
+4 or 6.</p>
+            
+
+            
+            <div class="method-source-code" id="version-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 390</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">version</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">m</span> = <span class="ruby-regexp">/^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(\.\d{1,3}\.\d{1,3})?$/</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;Invalid IP address #{in_ip}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">m</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">nil?</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-value">4</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">m</span>[<span class="ruby-value">2</span>].<span class="ruby-identifier">nil?</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-value">6</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- version-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- version-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="21-3D-method" class="method-detail ">
+          <a name="method-i-21-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">!=</span><span
+              class="method-args">(in_ip)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operators !=</p>
+            
+
+            
+            <div class="method-source-code" id="21-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 172</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">!=</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-string">&quot;Can not compare IPV4 with IPV6!&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@version</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">version</span>
+  <span class="ruby-ivar">@ip_int</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">to_i</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 21-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 21-3D-method -->
+
+      
+        <div id="26-method" class="method-detail ">
+          <a name="method-i-26"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">&amp;</span><span
+              class="method-args">(in_ip)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operator &amp; (binary AND)</p>
+            
+
+            
+            <div class="method-source-code" id="26-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 219</span>
+<span class="ruby-keyword">def</span> &amp;(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-string">&quot;Can not compare IPV4 with IPV6!&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@version</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">version</span>
+  <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@ip_int</span> &amp; <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">to_i</span>, <span class="ruby-ivar">@version</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 26-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 26-method -->
+
+      
+        <div id="2B-method" class="method-detail ">
+          <a name="method-i-2B"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">+</span><span
+              class="method-args">(in_delta)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operator “+” (and +=)</p>
+            
+
+            
+            <div class="method-source-code" id="2B-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 114</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">+</span>(<span class="ruby-identifier">in_delta</span>)
+  <span class="ruby-identifier">v</span> = <span class="ruby-ivar">@ip_int</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">in_delta</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;+: Invalid operand #{in_delta}&quot;</span> <span class="ruby-keyword">if</span> (<span class="ruby-identifier">v</span> <span class="ruby-operator">&gt;</span> <span class="ruby-constant">MAX</span>())
+  <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">v</span>, <span class="ruby-ivar">@version</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 2B-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 2B-method -->
+
+      
+        <div id="2D-method" class="method-detail ">
+          <a name="method-i-2D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">-</span><span
+              class="method-args">(in_delta)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operator “-” (and -=)</p>
+            
+
+            
+            <div class="method-source-code" id="2D-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 122</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">-</span>(<span class="ruby-identifier">in_delta</span>)
+  <span class="ruby-identifier">v</span> = <span class="ruby-ivar">@ip_int</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">in_delta</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;-: Invalid operand #{in_delta}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">v</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>
+  <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">v</span>, <span class="ruby-ivar">@version</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 2D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 2D-method -->
+
+      
+        <div id="3C-method" class="method-detail ">
+          <a name="method-i-3C"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">&lt;</span><span
+              class="method-args">(in_ip)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operators &lt;</p>
+            
+
+            
+            <div class="method-source-code" id="3C-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 144</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">&lt;</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-string">&quot;Can not compare IPV4 with IPV6!&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@version</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">version</span>
+  <span class="ruby-ivar">@ip_int</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">to_i</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 3C-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 3C-method -->
+
+      
+        <div id="3C-3C-method" class="method-detail ">
+          <a name="method-i-3C-3C"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">&lt;&lt;</span><span
+              class="method-args">(in_decal)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operator &lt;&lt;</p>
+            
+
+            
+            <div class="method-source-code" id="3C-3C-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 206</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">&lt;&lt;</span>(<span class="ruby-identifier">in_decal</span>)
+  <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">new</span>((<span class="ruby-ivar">@ip_int</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">in_decal</span>) &amp; <span class="ruby-constant">MAX</span>(), <span class="ruby-ivar">@version</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 3C-3C-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 3C-3C-method -->
+
+      
+        <div id="3C-3D-method" class="method-detail ">
+          <a name="method-i-3C-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">&lt;=</span><span
+              class="method-args">(in_ip)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operators &lt;=</p>
+            
+
+            
+            <div class="method-source-code" id="3C-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 158</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">&lt;=</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-string">&quot;Can not compare IPV4 with IPV6!&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@version</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">version</span>
+  <span class="ruby-ivar">@ip_int</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">to_i</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 3C-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 3C-3D-method -->
+
+      
+        <div id="3C-3D-3E-method" class="method-detail ">
+          <a name="method-i-3C-3D-3E"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">&lt;=&gt;</span><span
+              class="method-args">(in_ip)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operators &lt;=&gt;</p>
+            
+
+            
+            <div class="method-source-code" id="3C-3D-3E-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 130</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">&lt;=&gt;</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-string">&quot;Can not compare IPV4 with IPV6!&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@version</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">version</span>
+  <span class="ruby-ivar">@ip_int</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">to_i</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 3C-3D-3E-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 3C-3D-3E-method -->
+
+      
+        <div id="3D-3D-method" class="method-detail ">
+          <a name="method-i-3D-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">==</span><span
+              class="method-args">(in_ip)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operators ==</p>
+            
+
+            
+            <div class="method-source-code" id="3D-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 165</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">==</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-string">&quot;Can not compare IPV4 with IPV6!&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@version</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">version</span>
+  <span class="ruby-ivar">@ip_int</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">to_i</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 3D-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 3D-3D-method -->
+
+      
+        <div id="3E-method" class="method-detail ">
+          <a name="method-i-3E"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">&gt;</span><span
+              class="method-args">(in_ip)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operators &gt;</p>
+            
+
+            
+            <div class="method-source-code" id="3E-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 137</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">&gt;</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-string">&quot;Can not compare IPV4 with IPV6!&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@version</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">version</span>
+  <span class="ruby-ivar">@ip_int</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">to_i</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 3E-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 3E-method -->
+
+      
+        <div id="3E-3D-method" class="method-detail ">
+          <a name="method-i-3E-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">&gt;=</span><span
+              class="method-args">(in_ip)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operators &gt;=</p>
+            
+
+            
+            <div class="method-source-code" id="3E-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 151</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">&gt;=</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-string">&quot;Can not compare IPV4 with IPV6!&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@version</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">version</span>
+  <span class="ruby-ivar">@ip_int</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">to_i</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 3E-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 3E-3D-method -->
+
+      
+        <div id="3E-3E-method" class="method-detail ">
+          <a name="method-i-3E-3E"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">&gt;&gt;</span><span
+              class="method-args">(in_decal)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operator &gt;&gt;</p>
+            
+
+            
+            <div class="method-source-code" id="3E-3E-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 200</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">&gt;&gt;</span>(<span class="ruby-identifier">in_decal</span>)
+  <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@ip_int</span> <span class="ruby-operator">&gt;&gt;</span> <span class="ruby-identifier">in_decal</span>, <span class="ruby-ivar">@version</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 3E-3E-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 3E-3E-method -->
+
+      
+        <div id="5B-5D-method" class="method-detail ">
+          <a name="method-i-5B-5D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">[]</span><span
+              class="method-args">(in_index)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Return a given dot value extracted from an IP address. Example: If ip is
+“192.168.0.15”, <a href="http://0">ip</a> is 192, <a href="http://1">ip</a>
+is 168…</p>
+            
+
+            
+            <div class="method-source-code" id="5B-5D-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 180</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">[]</span>(<span class="ruby-identifier">in_index</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;[]: Invalid index #{in_index}&quot;</span> <span class="ruby-keyword">if</span> ((<span class="ruby-identifier">in_index</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>) <span class="ruby-operator">||</span> (<span class="ruby-identifier">in_index</span> <span class="ruby-operator">&gt;</span> <span class="ruby-constant">MAX_DOTS_INDEX</span>()))
+  <span class="ruby-ivar">@dots</span>[<span class="ruby-identifier">in_index</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 5B-5D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 5B-5D-method -->
+
+      
+        <div id="5B-5D-3D-method" class="method-detail ">
+          <a name="method-i-5B-5D-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">[]=</span><span
+              class="method-args">(in_index, in_value)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Assign a value to a given IP’s dot. Example: <a href="Ip.html">Ip</a> ip is
+“192.168.0.15”, <a href="http://0">ip</a>=193 then ip=“193.168.0.15”</p>
+            
+
+            
+            <div class="method-source-code" id="5B-5D-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 188</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">[]=</span>(<span class="ruby-identifier">in_index</span>, <span class="ruby-identifier">in_value</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;[]: Invalid index #{in_index}&quot;</span> <span class="ruby-keyword">if</span> ((<span class="ruby-identifier">in_index</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>) <span class="ruby-operator">||</span> (<span class="ruby-identifier">in_index</span> <span class="ruby-operator">&gt;</span> <span class="ruby-constant">MAX_DOTS_INDEX</span>()))
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;[]: Invalid value #{in_value}&quot;</span> <span class="ruby-keyword">if</span> ((<span class="ruby-identifier">in_value</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>) <span class="ruby-operator">||</span> (<span class="ruby-identifier">in_value</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">255</span>))
+  <span class="ruby-ivar">@dots</span>[<span class="ruby-identifier">in_index</span>] = <span class="ruby-identifier">in_value</span>
+  
+  <span class="ruby-comment"># Updtate values.</span>
+  <span class="ruby-ivar">@ip_int</span>    = <span class="ruby-constant">Iptools</span>.<span class="ruby-identifier">dots_to_i</span>(<span class="ruby-ivar">@dots</span>)
+  <span class="ruby-ivar">@ip_string</span> = <span class="ruby-constant">Iptools</span>.<span class="ruby-identifier">i_to_dots</span>(<span class="ruby-ivar">@ip_int</span>, <span class="ruby-ivar">@version</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 5B-5D-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 5B-5D-3D-method -->
+
+      
+        <div id="5E-method" class="method-detail ">
+          <a name="method-i-5E"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">^</span><span
+              class="method-args">(in_ip)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operator ^ (binary XOR)</p>
+            
+
+            
+            <div class="method-source-code" id="5E-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 226</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">^</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-string">&quot;Can not compare IPV4 with IPV6!&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@version</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">version</span>
+  <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@ip_int</span> <span class="ruby-operator">^</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">to_i</span>, <span class="ruby-ivar">@version</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 5E-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 5E-method -->
+
+      
+        <div id="cidr-method" class="method-detail ">
+          <a name="method-i-cidr"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">cidr</span><span
+              class="method-args">(in_class)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Return the CIDR of a given subnet’s class that contains this IP address.</p>
+<dl class="rdoc-list"><dt>in_class</dt>
+<dd>
+<p>Class of the subnet (example: 26).</p>
+</dd></dl>
+
+<p>The method returns the CIDR of the given class that contains this IP
+address.</p>
+            
+
+            
+            <div class="method-source-code" id="cidr-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 237</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">cidr</span>(<span class="ruby-identifier">in_class</span>)
+  <span class="ruby-identifier">max_class</span> = <span class="ruby-constant">MAX_CLASS</span>()
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;Invalid subnet class /#{in_class}&quot;</span> <span class="ruby-keyword">if</span> (<span class="ruby-identifier">in_class</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">max_class</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">in_class</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">1</span>)
+  <span class="ruby-identifier">mask</span> = (<span class="ruby-value">2</span><span class="ruby-operator">**</span><span class="ruby-identifier">in_class</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>) <span class="ruby-operator">&lt;&lt;</span> (<span class="ruby-identifier">max_class</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">in_class</span>)
+  <span class="ruby-constant">Iptools</span>.<span class="ruby-identifier">i_to_dots</span>(<span class="ruby-ivar">@ip_int</span> &amp; <span class="ruby-identifier">mask</span>, <span class="ruby-ivar">@version</span>) <span class="ruby-operator">+</span> <span class="ruby-node">&quot;/#{in_class}&quot;</span> 
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- cidr-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- cidr-method -->
+
+      
+        <div id="included_in-3F-method" class="method-detail ">
+          <a name="method-i-included_in-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">included_in?</span><span
+              class="method-args">(in_subnet)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Test if the IP address is part of a given subnet.</p>
+<dl class="rdoc-list"><dt>in_subnet</dt>
+<dd>
+<p>The subnet (example: “173.85.245.32/27”).</p>
+</dd></dl>
+
+<p>The method returns TRUE or FALSE, whether the given IP address is included
+into the given subnet or not.</p>
+            
+
+            
+            <div class="method-source-code" id="included_in-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 250</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">included_in?</span>(<span class="ruby-identifier">in_subnet</span>)
+  <span class="ruby-identifier">m</span> = <span class="ruby-regexp">/^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(\.\d{1,3}\.\d{1,3})?)\s*\/\s*(\d{1,2})$/</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">in_subnet</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;Invalid subnet #{in_subnet}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">m</span>.<span class="ruby-identifier">nil?</span>
+  
+  <span class="ruby-identifier">ipv6tag</span> = <span class="ruby-identifier">m</span>[<span class="ruby-value">2</span>]
+  
+  <span class="ruby-identifier">cidrv</span> = <span class="ruby-value">6</span>
+  <span class="ruby-keyword">if</span> (<span class="ruby-identifier">ipv6tag</span>.<span class="ruby-identifier">nil?</span>)
+    <span class="ruby-identifier">cidrv</span> = <span class="ruby-value">4</span>
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;Subnet #{in_subnet} is IP version #{cidrv} and current IP is IP version #{@version}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@version</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">cidrv</span>
+  
+  <span class="ruby-identifier">snet</span>   = <span class="ruby-identifier">m</span>[<span class="ruby-value">1</span>]
+  <span class="ruby-identifier">classe</span> = <span class="ruby-identifier">m</span>[<span class="ruby-value">3</span>]
+  <span class="ruby-identifier">s</span>      = <span class="ruby-identifier">cidr</span>(<span class="ruby-identifier">classe</span>.<span class="ruby-identifier">to_i</span>)
+  <span class="ruby-comment"># puts s + &quot;  ---  &quot; + snet + &quot;/&quot; + classe</span>
+  <span class="ruby-identifier">s</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">snet</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">classe</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- included_in-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- included_in-3F-method -->
+
+      
+        <div id="to_bin-method" class="method-detail ">
+          <a name="method-i-to_bin"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_bin</span><span
+              class="method-args">(in_pretty=false)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Return a string that represents the IP address’ binary value. The returned
+string may contain bytes’ separators (dots). Example: “1.2.3.4” =&gt;
+“00000001000000100000001100000100” or “00000001.00000010.00000011.00000100”</p>
+<dl class="rdoc-list"><dt>in_pretty</dt>
+<dd>
+<p>If TRUE, then the returned string will contain dots to separated bytes.</p>
+</dd></dl>
+
+<p>The method returns a string that represents a binary value.</p>
+            
+
+            
+            <div class="method-source-code" id="to_bin-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 82</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_bin</span>(<span class="ruby-identifier">in_pretty</span>=<span class="ruby-keyword">false</span>)
+  <span class="ruby-identifier">s</span> = <span class="ruby-ivar">@ip_int</span>.<span class="ruby-identifier">to_s</span>(<span class="ruby-value">2</span>).<span class="ruby-identifier">rjust</span>(<span class="ruby-ivar">@version</span>*<span class="ruby-value">8</span>, <span class="ruby-string">'0'</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">s</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">in_pretty</span>
+  
+  <span class="ruby-keyword">if</span> (<span class="ruby-ivar">@version</span> <span class="ruby-operator">==</span> <span class="ruby-value">4</span>)
+    <span class="ruby-regexp">/^((?:0|1){8})((?:0|1){8})((?:0|1){8})((?:0|1){8})$/</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">s</span>)[<span class="ruby-value">1</span>,<span class="ruby-value">4</span>].<span class="ruby-identifier">join</span>(<span class="ruby-string">'.'</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-regexp">/^((?:0|1){8})((?:0|1){8})((?:0|1){8})((?:0|1){8})((?:0|1){8})((?:0|1){8})$/</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">s</span>)[<span class="ruby-value">1</span>,<span class="ruby-value">6</span>].<span class="ruby-identifier">join</span>(<span class="ruby-string">'.'</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_bin-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_bin-method -->
+
+      
+        <div id="to_hex-method" class="method-detail ">
+          <a name="method-i-to_hex"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_hex</span><span
+              class="method-args">(in_pretty=false)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Return a string that represents the IP address’ hexa value. The returned
+string may contain bytes’ separators (dots). Example: “1.2.3.4” =&gt;
+“01020304” or “01.02.03.04”</p>
+<dl class="rdoc-list"><dt>in_pretty</dt>
+<dd>
+<p>If TRUE, then the returned string will contain dots to separate bytes.</p>
+</dd></dl>
+
+<p>The method returns a string that represents a hexa value.</p>
+            
+
+            
+            <div class="method-source-code" id="to_hex-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 101</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_hex</span>(<span class="ruby-identifier">in_pretty</span>=<span class="ruby-keyword">false</span>)
+  <span class="ruby-identifier">s</span> = <span class="ruby-ivar">@ip_int</span>.<span class="ruby-identifier">to_s</span>(<span class="ruby-value">16</span>).<span class="ruby-identifier">rjust</span>(<span class="ruby-ivar">@version</span>*<span class="ruby-value">2</span>, <span class="ruby-string">'0'</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">s</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">in_pretty</span>
+  
+  <span class="ruby-keyword">if</span> (<span class="ruby-ivar">@version</span> <span class="ruby-operator">==</span> <span class="ruby-value">4</span>)
+    <span class="ruby-regexp">/^([[:xdigit:]]{2})([[:xdigit:]]{2})([[:xdigit:]]{2})([[:xdigit:]]{2})$/</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">s</span>)[<span class="ruby-value">1</span>,<span class="ruby-value">4</span>].<span class="ruby-identifier">join</span>(<span class="ruby-string">'.'</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-regexp">/^([[:xdigit:]]{2})([[:xdigit:]]{2})([[:xdigit:]]{2})([[:xdigit:]]{2})([[:xdigit:]]{2})([[:xdigit:]]{2})$/</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">s</span>)[<span class="ruby-value">1</span>,<span class="ruby-value">6</span>].<span class="ruby-identifier">join</span>(<span class="ruby-string">'.'</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_hex-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_hex-method -->
+
+      
+        <div id="to_i-method" class="method-detail ">
+          <a name="method-i-to_i"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_i</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Return the integer representation of the IP address.</p>
+            
+
+            
+            <div class="method-source-code" id="to_i-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 69</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_i</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-ivar">@ip_int</span> <span class="ruby-keyword">unless</span> (<span class="ruby-ivar">@ip_int</span>.<span class="ruby-identifier">nil?</span>);
+  <span class="ruby-constant">Iptools</span>.<span class="ruby-identifier">dots_to_i</span>(<span class="ruby-ivar">@dots</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_i-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_i-method -->
+
+      
+        <div id="to_s-method" class="method-detail ">
+          <a name="method-i-to_s"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_s</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Return the textual representation of the IP address.</p>
+            
+
+            
+            <div class="method-source-code" id="to_s-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 63</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_s</span>
+  <span class="ruby-ivar">@ip_string</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_s-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_s-method -->
+
+      
+        <div id="7C-method" class="method-detail ">
+          <a name="method-i-7C"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">|</span><span
+              class="method-args">(in_ip)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operator | (binary OR)</p>
+            
+
+            
+            <div class="method-source-code" id="7C-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Ip.rb, line 212</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">|</span>(<span class="ruby-identifier">in_ip</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-string">&quot;Can not compare IPV4 with IPV6!&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@version</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">version</span>
+  <span class="ruby-constant">Ip</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@ip_int</span> <span class="ruby-operator">|</span> <span class="ruby-identifier">in_ip</span>.<span class="ruby-identifier">to_i</span>, <span class="ruby-ivar">@version</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 7C-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 7C-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

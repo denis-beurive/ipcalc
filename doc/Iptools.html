@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Module: Iptools</title>
+
+  <link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+  <script src="./js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="module">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="./lib/ipcalc/Iptools_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/ipcalc/Iptools.rb">lib/ipcalc/Iptools.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-dots_to_i">::dots_to_i</a></li>
+          
+          <li><a href="#method-c-i_to_dots">::i_to_dots</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./Ip.html">Ip</a></li>
+        
+          <li><a href="./Iptools.html">Iptools</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="module">Iptools</h1>
+
+    <div id="description" class="description">
+      
+<p>This module contains various utilities that are used by all classes that
+manipulate IP addresses.</p>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="dots_to_i-method" class="method-detail ">
+          <a name="method-c-dots_to_i"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">dots_to_i</span><span
+              class="method-args">(in_dots)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Convert an array that represents an IP address into an integer. Example:
+[173, 85, 245, 65] =&gt; 2908091713.</p>
+<dl class="rdoc-list"><dt>in_dots</dt>
+<dd>
+<p>the array that will be converted into an integer (ex: [192, 168, 0, 10]).</p>
+</dd></dl>
+
+<p>The method returns an integer.</p>
+            
+
+            
+            <div class="method-source-code" id="dots_to_i-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Iptools.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dots_to_i</span>(<span class="ruby-identifier">in_dots</span>)
+  <span class="ruby-identifier">bint</span> = <span class="ruby-value">0</span>;
+  <span class="ruby-identifier">rdx</span>  = <span class="ruby-value">1</span>; 
+  <span class="ruby-identifier">in_dots</span>.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">dot</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">bint</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">dot</span> * <span class="ruby-identifier">rdx</span>
+    <span class="ruby-identifier">rdx</span> <span class="ruby-operator">*=</span> <span class="ruby-value">256</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">bint</span>    
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- dots_to_i-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- dots_to_i-method -->
+
+      
+        <div id="i_to_dots-method" class="method-detail ">
+          <a name="method-c-i_to_dots"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">i_to_dots</span><span
+              class="method-args">(in_int, in_v=4)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Convert an integer that represents an IP address into an array. Example:
+2908091713 =&gt; [173, 85, 245, 65]</p>
+<dl class="rdoc-list"><dt>in_int</dt>
+<dd>
+<p>Integer to convert.</p>
+</dd><dt>in_v</dt>
+<dd>
+<p>IP version (should be 4 or 6).</p>
+</dd></dl>
+
+<p>The method returns an array (with 4 or 6 elements).</p>
+            
+
+            
+            <div class="method-source-code" id="i_to_dots-source">
+<pre>
+<span class="ruby-comment"># File lib/ipcalc/Iptools.rb, line 36</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">i_to_dots</span>(<span class="ruby-identifier">in_int</span>, <span class="ruby-identifier">in_v</span>=<span class="ruby-value">4</span>)
+  <span class="ruby-identifier">res</span> = [];
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;Invalid IP version #{in_v} (should be 4 or 6)&quot;</span> <span class="ruby-keyword">if</span> (<span class="ruby-identifier">in_v</span> <span class="ruby-operator">!=</span> <span class="ruby-value">4</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">in_v</span> <span class="ruby-operator">!=</span> <span class="ruby-value">6</span>) 
+  <span class="ruby-identifier">in_v</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">r</span>      = <span class="ruby-identifier">in_int</span> <span class="ruby-operator">%</span> <span class="ruby-value">256</span>;
+    <span class="ruby-identifier">in_int</span> = (<span class="ruby-identifier">in_int</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">r</span>) <span class="ruby-operator">/</span> <span class="ruby-value">256</span>;
+    <span class="ruby-identifier">res</span>.<span class="ruby-identifier">unshift</span>(<span class="ruby-identifier">r</span>.<span class="ruby-identifier">to_s</span>);
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">res</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'.'</span>);
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- i_to_dots-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- i_to_dots-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

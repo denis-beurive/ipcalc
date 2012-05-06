@@ -55,6 +55,16 @@ Then you can install the gem. Please note that we assume that the gem's version 
 
 See the example file: https://github.com/denis-beurive/ipcalc/tree/master/examples
 
+==Building the documentation==
+
+Using Rdoc:
+
+<code>rdoc lib/ipcalc/*.rb</code>
+
+Or, you can call rake:
+
+<code>rake rdoc</code>
+
 ==Author==
 
 Denis BEURIVE (http://beurive.com/)
