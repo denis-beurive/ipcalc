@@ -45,10 +45,15 @@ Then you can install the gem. Please note that we assume that the gem's version 
 
 ===Installing from rubygems.org===
 
-<code>
-gem list -r ipcalc
-gem install ipcalc
-</code>
+If you just want to use the gem, then this is the preferred installation procedure.
+
+<code>gem list -r ipcalc</code>
+
+<code>gem install ipcalc</code>
+
+==Examples==
+
+See the example file: https://github.com/denis-beurive/ipcalc/tree/master/examples
 
 ==Author==
 
