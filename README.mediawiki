@@ -31,6 +31,14 @@ Ruby 1.9.1 or greater.
 
 ==Installing the gem==
 
+===Installing from rubygems.org===
+
+If you just want to use the gem, then this is the preferred installation procedure.
+
+<code>gem list -r ipcalc</code>
+
+<code>gem install ipcalc</code>
+
 ===Installing from local file system===
 
 This procedure assumes that you have downloaded the gem' sources from GutHub. If you just need to use the gem, you should install the gem from "Rubygems.org" (see next section).
@@ -43,21 +51,13 @@ Then you can install the gem. Please note that we assume that the gem's version 
 
 <code>gem install ipcalc-1.0.0.gem</code>
 
-===Installing from rubygems.org===
-
-If you just want to use the gem, then this is the preferred installation procedure.
-
-<code>gem list -r ipcalc</code>
-
-<code>gem install ipcalc</code>
-
 ==Examples==
 
 See the example file: https://github.com/denis-beurive/ipcalc/tree/master/examples
 
 ==Author==
 
-Denis BEURIVE
+Denis BEURIVE (http://beurive.com/)
 
 ==Licence==
 
