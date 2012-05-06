@@ -8,5 +8,5 @@ spec = Gem::Specification.new do |s|
   s.email                 = 'denis.beurive@gmail.com'
   s.files                 = ["lib/ipcalc.rb", "lib/ipcalc/Iptools.rb", "lib/ipcalc/Ip.rb"]
   s.homepage              = 'https://github.com/denis-beurive/ipcalc'
-  s.required_ruby_version = '1.9.1'
+  s.required_ruby_version = '>= 1.9.1'
 end
